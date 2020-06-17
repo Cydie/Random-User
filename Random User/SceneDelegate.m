@@ -7,7 +7,6 @@
 //
 
 #import "SceneDelegate.h"
-#import "ViewController.h"
 #import "MasterViewController.h"
 #import "PersonDetailViewController.h"
 

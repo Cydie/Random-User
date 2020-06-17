@@ -79,27 +79,59 @@
 		005057642496354D00F81C25 /* Random User */ = {
 			isa = PBXGroup;
 			children = (
+				00DF5473249A449C007B7FEE /* Controllers */,
+				00DF5472249A447F007B7FEE /* Views */,
+				00DF5471249A4455007B7FEE /* Services */,
+				00DF546F249A440F007B7FEE /* Data */,
+				005057712496354F00F81C25 /* Assets.xcassets */,
+				005057732496354F00F81C25 /* LaunchScreen.storyboard */,
+				005057762496354F00F81C25 /* Info.plist */,
 				005057652496354D00F81C25 /* AppDelegate.h */,
 				005057662496354D00F81C25 /* AppDelegate.m */,
 				005057682496354D00F81C25 /* SceneDelegate.h */,
 				005057692496354D00F81C25 /* SceneDelegate.m */,
-				005057712496354F00F81C25 /* Assets.xcassets */,
-				005057732496354F00F81C25 /* LaunchScreen.storyboard */,
-				005057762496354F00F81C25 /* Info.plist */,
 				005057772496354F00F81C25 /* main.m */,
-				0050577E249647F900F81C25 /* MasterViewController.h */,
-				0050577F2496481F00F81C25 /* MasterViewController.m */,
-				005057812497805900F81C25 /* PersonTableViewCell.h */,
-				005057822497805900F81C25 /* PersonTableViewCell.m */,
-				00DF54652498D543007B7FEE /* Person.h */,
-				00DF54662498D543007B7FEE /* Person.m */,
-				00DF546824991616007B7FEE /* PersonService.h */,
-				00DF546924991616007B7FEE /* PersonService.m */,
-				00DF546B249929A7007B7FEE /* PersonDetailViewController.h */,
-				00DF546C249929A7007B7FEE /* PersonDetailViewController.m */,
-				00DF546E24992FC4007B7FEE /* PersonDetailDelegate.h */,
 			);
 			path = "Random User";
+			sourceTree = "<group>";
+		};
+		00DF546F249A440F007B7FEE /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				00DF54652498D543007B7FEE /* Person.h */,
+				00DF54662498D543007B7FEE /* Person.m */,
+			);
+			name = Data;
+			sourceTree = "<group>";
+		};
+		00DF5471249A4455007B7FEE /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				00DF546824991616007B7FEE /* PersonService.h */,
+				00DF546924991616007B7FEE /* PersonService.m */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		00DF5472249A447F007B7FEE /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				005057812497805900F81C25 /* PersonTableViewCell.h */,
+				005057822497805900F81C25 /* PersonTableViewCell.m */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		00DF5473249A449C007B7FEE /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				00DF546E24992FC4007B7FEE /* PersonDetailDelegate.h */,
+				0050577E249647F900F81C25 /* MasterViewController.h */,
+				0050577F2496481F00F81C25 /* MasterViewController.m */,
+				00DF546B249929A7007B7FEE /* PersonDetailViewController.h */,
+				00DF546C249929A7007B7FEE /* PersonDetailViewController.m */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 		21AA1337657E3C51515EF2E6 /* Frameworks */ = {

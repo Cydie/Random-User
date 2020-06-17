@@ -9,8 +9,6 @@
 #import <UIKit/UIKit.h>
 #import "PersonDetailDelegate.h"
 
-NS_ASSUME_NONNULL_BEGIN
-
 @interface PersonDetailViewController : UITableViewController <PersonDetailDelegate> {
 	Person *_person;
 	NSArray *_tableLayout;
@@ -20,5 +18,3 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)updateWithPerson:(Person *)person;
 
 @end
-
-NS_ASSUME_NONNULL_END
