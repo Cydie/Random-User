@@ -79,10 +79,10 @@
 		005057642496354D00F81C25 /* Random User */ = {
 			isa = PBXGroup;
 			children = (
+				00DF5476249A4DA3007B7FEE /* Views */,
+				00DF5475249A4D8B007B7FEE /* Data */,
 				00DF5473249A449C007B7FEE /* Controllers */,
-				00DF5472249A447F007B7FEE /* Views */,
 				00DF5471249A4455007B7FEE /* Services */,
-				00DF546F249A440F007B7FEE /* Data */,
 				005057712496354F00F81C25 /* Assets.xcassets */,
 				005057732496354F00F81C25 /* LaunchScreen.storyboard */,
 				005057762496354F00F81C25 /* Info.plist */,
@@ -95,15 +95,6 @@
 			path = "Random User";
 			sourceTree = "<group>";
 		};
-		00DF546F249A440F007B7FEE /* Data */ = {
-			isa = PBXGroup;
-			children = (
-				00DF54652498D543007B7FEE /* Person.h */,
-				00DF54662498D543007B7FEE /* Person.m */,
-			);
-			name = Data;
-			sourceTree = "<group>";
-		};
 		00DF5471249A4455007B7FEE /* Services */ = {
 			isa = PBXGroup;
 			children = (
@@ -111,15 +102,6 @@
 				00DF546924991616007B7FEE /* PersonService.m */,
 			);
 			path = Services;
-			sourceTree = "<group>";
-		};
-		00DF5472249A447F007B7FEE /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				005057812497805900F81C25 /* PersonTableViewCell.h */,
-				005057822497805900F81C25 /* PersonTableViewCell.m */,
-			);
-			name = Views;
 			sourceTree = "<group>";
 		};
 		00DF5473249A449C007B7FEE /* Controllers */ = {
@@ -132,6 +114,24 @@
 				00DF546C249929A7007B7FEE /* PersonDetailViewController.m */,
 			);
 			path = Controllers;
+			sourceTree = "<group>";
+		};
+		00DF5475249A4D8B007B7FEE /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				00DF54652498D543007B7FEE /* Person.h */,
+				00DF54662498D543007B7FEE /* Person.m */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		00DF5476249A4DA3007B7FEE /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				005057812497805900F81C25 /* PersonTableViewCell.h */,
+				005057822497805900F81C25 /* PersonTableViewCell.m */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		21AA1337657E3C51515EF2E6 /* Frameworks */ = {
