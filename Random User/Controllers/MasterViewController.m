@@ -38,7 +38,10 @@
 	self.refreshControl = refreshControl;
 	
 	self.title = @"Users";
-	self.tableView.backgroundColor = UIColor.secondarySystemBackgroundColor;
+	if (UITraitCollection.currentTraitCollection.userInterfaceStyle == UIUserInterfaceStyleDark)
+		self.tableView.backgroundColor = UIColor.blackColor;
+	else
+		self.tableView.backgroundColor = UIColor.secondarySystemBackgroundColor;
 	self.tableView.tintColor = UIColor.whiteColor;
 	
 	[self refreshPersons];
