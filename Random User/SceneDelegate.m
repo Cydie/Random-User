@@ -7,6 +7,9 @@
 //
 
 #import "SceneDelegate.h"
+#import "ViewController.h"
+#import "MasterViewController.h"
+#import "PersonDetailViewController.h"
 
 @interface SceneDelegate ()
 
@@ -16,9 +19,28 @@
 
 
 - (void)scene:(UIScene *)scene willConnectToSession:(UISceneSession *)session options:(UISceneConnectionOptions *)connectionOptions {
-	// Use this method to optionally configure and attach the UIWindow `window` to the provided UIWindowScene `scene`.
-	// If using a storyboard, the `window` property will automatically be initialized and attached to the scene.
-	// This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
+
+	UIWindow *window = [[UIWindow alloc] initWithWindowScene:(UIWindowScene *)scene];
+	
+	MasterViewController *masterViewController = [[MasterViewController alloc] initWithStyle:UITableViewStylePlain];
+	UINavigationController *masterNav = [[UINavigationController alloc] initWithRootViewController:masterViewController];
+	
+	UITableViewStyle tableStyle = UIDevice.currentDevice.userInterfaceIdiom == UIUserInterfaceIdiomPhone ? UITableViewStyleGrouped : UITableViewStyleInsetGrouped;
+	PersonDetailViewController *detailViewController = [[PersonDetailViewController alloc] initWithStyle:tableStyle];
+	UINavigationController *detailNav = [[UINavigationController alloc] initWithRootViewController:detailViewController];
+	
+	masterViewController.delegate = detailViewController;
+	masterViewController.detailViewController = detailViewController;
+	
+	UISplitViewController *splitViewController = [[UISplitViewController alloc] init];
+	splitViewController.viewControllers = @[masterNav, detailNav];
+	splitViewController.delegate = masterViewController;
+	splitViewController.preferredDisplayMode = UISplitViewControllerDisplayModeAllVisible;
+	
+	window.rootViewController = splitViewController;
+	[window makeKeyAndVisible];
+	self.window = window;
+	
 }
 
 
